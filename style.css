@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: rgb(15, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 115, 0.457) 0%,
+    rgb(74, 66, 146) 51%,
+    rgba(54, 86, 190, 0.423) 85%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* background-image: linear-gradient(to bottom, aqua, rgb(211, 191, 191), pink); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header a img {
+  width: 75px;
+}
+
+header .sign {
+  padding-right: 0.5rem;
+  font-size: 2rem;
+}
+
+header .sign a {
+  color: #24211b;
+  text-decoration: none;
+}
+
+header .sign a:hover {
+  border-bottom: 2px solid #24211b;
+}
+
+.sign a.reg {
+  color: white;
+}
+.sign a.reg:hover {
+  border-bottom: 2px solid white;
+}
+
+nav.sticky {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: rgb(133, 2, 133);
+  text-align: center;
+  top: 0rem;
+  z-index: 1;
+}
+
+.sticky a {
+  width: 5rem;
+  height: 1.6rem;
+  text-decoration: none;
+  margin: 0 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sticky a:hover {
+  background-color: rgba(255, 255, 255, 0.212);
+  color: rgb(233, 238, 231);
+  border-radius: 0.3rem;
+}
+
+nav.banner {
+  position: relative;
+}
+
+nav.banner img {
+  width: 100%;
+  max-height: calc(100vh - 166px);
+}
+
+nav.banner .hero {
+  position: absolute;
+  top: 15%;
+  right: 35%;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  color: coral;
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.8);
+}
+
+.hero button {
+  border: none;
+  color: rgb(255, 253, 252);
+  text-decoration: none;
+  background: none;
+  font-weight: 800;
+  margin-top: 5px;
+  border-bottom: 2px white solid;
+}
+
+.hero button:hover {
+  background-color: coral;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+}
+
+main {
+  padding: 2rem;
+  text-align: justify;
+}
+
+.slack a {
+  font-size: 2rem;
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  color: #d6249f;
+  z-index: 22;
+}
